@@ -18,6 +18,7 @@
 - `git add .` 添加全部到暂存区
 - `git commit -m "说明"` 提交
 - `git push origin master` 推送
+- git pull 拉取远程更新
 
 ## SSH 443 方案（2026-11-04 配置）
 - 22 端口被网络屏蔽时，改走 `ssh.github.com:443`
