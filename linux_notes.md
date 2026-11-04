@@ -18,3 +18,9 @@
 - `git add .` 添加全部到暂存区
 - `git commit -m "说明"` 提交
 - `git push origin master` 推送
+
+## SSH 443 方案（2026-11-04 配置）
+- 22 端口被网络屏蔽时，改走 `ssh.github.com:443`
+- 密钥副本位置：`C:\Users\Public\ssh\id_rsa`
+- 测试命令：`ssh -T -i C:/Users/Public/ssh/id_rsa -o HostName=ssh.github.com -p 443 git@github.com`
+- 仓库级配置：`git config core.sshCommand "ssh -i C:/Users/Public/ssh/id_rsa -o HostName=ssh.github.com -p 443"`
